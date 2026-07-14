@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors */
+  --color-darkBg: #060913;
+  --color-darkCard: rgba(13, 20, 38, 0.45);
+  --color-cyanGlow: #00f2fe;
+  --color-violetGlow: #7f00ff;
+  --color-blueGlow: #4facfe;
+
+  /* Custom Font Families */
+  --font-outfit: "Outfit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* Custom Shadows */
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --shadow-cyanShadow: 0 0 20px rgba(0, 242, 254, 0.25);
+  --shadow-violetShadow: 0 0 20px rgba(127, 0, 255, 0.25);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060913;
+  color: #f3f4f6;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060913;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 254, 0.2);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 0, 255, 0.6);
+  box-shadow: 0 0 10px rgba(127, 0, 255, 0.8);
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(13, 20, 38, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 242, 254, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.1);
+}
+
+.glass-panel-violet:hover {
+  border-color: rgba(127, 0, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(127, 0, 255, 0.1);
+}
+
+/* Text glow utilities */
+.glow-text-cyan {
+  text-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
+}
+
+.glow-text-violet {
+  text-shadow: 0 0 12px rgba(127, 0, 255, 0.6);
+}
+
+/* Timeline vertical line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: linear-gradient(to bottom, #00f2fe, #7f00ff, #4facfe);
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+    transform: none;
+  }
+}
+
+/* Custom Scroll Container */
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Hide Three.js Canvas outline */
+canvas {
+  outline: none;
+}

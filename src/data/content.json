@@ -1,0 +1,169 @@
+{
+  "personal": {
+    "name": "Kulin Mathur",
+    "title": "B.Tech CSE (AI & ML Spec.)",
+    "university": "Vellore Institute of Technology, Chennai",
+    "tagline": "Building intelligent systems that learn, reason, and scale",
+    "email": "mathurkulin04@gmail.com",
+    "phone": "+91 9680259774",
+    "location": "Chennai, India",
+    "github": "https://github.com/kulin-m",
+    "linkedin": "https://linkedin.com/in/kulin-mathur",
+    "wixPortfolio": "https://anchor4ub.wixsite.com/digital-portfolio",
+    "bio": [
+      "I'm a final-year Computer Science student specializing in Artificial Intelligence and Machine Learning, passionate about building intelligent systems that solve real-world problems. From production-ready NLP applications and retrieval-augmented generation (RAG) pipelines to predictive machine learning models and full-stack web applications, I enjoy developing scalable, practical, and impactful solutions.",
+      "My expertise includes Python, machine learning, deep learning, REST API development, and modern AI frameworks. I've built end-to-end AI solutions, designed ML pipelines, and developed full-stack applications while continuously exploring the latest advancements in generative AI and large language models."
+    ]
+  },
+  "skills": {
+    "Languages": [
+      "Python", "Java", "C/C++", "SQL", "JavaScript", "HTML/CSS"
+    ],
+    "AI_ML": [
+      "Machine Learning", "NLP", "RAG Pipelines", "LLMs", "Sentence-BERT",
+      "FAISS Indexing", "scikit-learn", "TensorFlow", "MediaPipe", "Computer Vision"
+    ],
+    "Core_CS": [
+      "Data Structures & Algos", "Object-Oriented Programming", "REST API Design"
+    ],
+    "Frameworks_Tools": [
+      "FastAPI", "Flask", "React.js", "Node.js / Express", "MongoDB",
+      "Docker", "Git / GitHub", "Linux", "Google Drive API"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Web Development Intern",
+      "company": "InAmigos Foundation",
+      "location": "Remote",
+      "period": "2025",
+      "details": [
+        "Designed and deployed a multi-page organizational website using Wix AI based on real organizational data and branding requirements.",
+        "Designed a complete UI/UX system in Figma, including donation workflows, volunteer intake forms, impact showcase, and location-based assistance finder, delivered as publish-ready desktop and mobile prototypes.",
+        "Collaborated with team members across planning, design, and implementation phases to translate organizational requirements into functional digital solutions."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science and Engineering (AI/ML Specialization)",
+      "institution": "Vellore Institute of Technology",
+      "location": "Chennai, India",
+      "period": "2023 – Present",
+      "grade": "GPA: 8.89/10"
+    },
+    {
+      "degree": "12th Grade",
+      "institution": "RBSE",
+      "location": "Rajasthan, India",
+      "period": "2021 – 2022",
+      "grade": "Percentage: 85.4%"
+    },
+    {
+      "degree": "10th Grade",
+      "institution": "CBSE",
+      "location": "Rajasthan, India",
+      "period": "2019 – 2020",
+      "grade": "Percentage: 88%"
+    }
+  ],
+  "projects": [
+    {
+      "title": "YouTube RAG Question-Answering System",
+      "period": "2025",
+      "tech": ["Python", "FastAPI", "Sentence-BERT", "Gemini", "FAISS"],
+      "description": "A production-ready RAG backend that answers natural language queries from YouTube video transcripts.",
+      "points": [
+        "Designed RAG backend answering natural language questions from transcripts with sub-15s end-to-end latency.",
+        "Implemented hybrid retrieval pipeline (FAISS dense + BM25 sparse) fused via RRF, cross-encoder reranker, and MMR diversity selection.",
+        "Achieved Context Precision@K of 1.00 and MRR of 1.00 across evaluation samples.",
+        "Exposed REST API via FastAPI with interactive Swagger UI and evaluated across 14 metrics."
+      ],
+      "github": "https://github.com/kulin-m",
+      "demo": null
+    },
+    {
+      "title": "Enhanced Sign Language Recognition System",
+      "period": "2025",
+      "tech": ["Python", "MediaPipe", "TensorFlow", "TTS"],
+      "description": "Real-time sign language gesture recognition system with text-to-speech output for accessibility.",
+      "points": [
+        "Built a real-time hand gesture recognition pipeline using MediaPipe for landmark detection and TensorFlow for classification.",
+        "Integrated text-to-speech (TTS) engine to vocalize recognized signs, enabling communication for hearing-impaired users.",
+        "Trained custom gesture classification model on ASL alphabet dataset achieving high accuracy across 26 classes.",
+        "Designed an intuitive interface for live webcam-based sign detection with real-time feedback."
+      ],
+      "github": "https://github.com/kulin-m/ESLRS",
+      "demo": null
+    },
+    {
+      "title": "Secure Cloud Storage",
+      "period": "2025",
+      "tech": ["Python", "FastAPI", "React", "Google Drive API"],
+      "description": "A secure cloud storage application with encrypted file management and Google Drive integration.",
+      "points": [
+        "Developed a full-stack cloud storage platform with FastAPI backend and React frontend for secure file management.",
+        "Integrated Google Drive API for cloud storage operations with real-time file upload/download status tracking.",
+        "Implemented user authentication and authorization with encrypted file storage for data security.",
+        "Built responsive dashboard UI with file previews, folder management, and storage analytics."
+      ],
+      "github": "https://github.com/kulin-m/Secure_Cloud_Storage",
+      "demo": null
+    },
+    {
+      "title": "Lane & Vehicle Detection System",
+      "period": "2024",
+      "tech": ["Python", "OpenCV", "NumPy", "Computer Vision"],
+      "description": "Computer vision system for real-time lane marking and vehicle detection in driving footage.",
+      "points": [
+        "Built a real-time lane detection pipeline using Canny edge detection, Hough line transforms, and region-of-interest masking.",
+        "Implemented vehicle detection using Haar cascades and contour analysis for multi-object tracking.",
+        "Processed video streams with frame-by-frame lane overlay and bounding box annotations.",
+        "Optimized pipeline for real-time performance using NumPy vectorized operations and OpenCV optimizations."
+      ],
+      "github": "https://github.com/kulin-m/Lane-vehicle-detection",
+      "demo": null
+    },
+    {
+      "title": "Loan Approval Prediction System",
+      "period": "2024",
+      "tech": ["Python", "scikit-learn", "Flask", "Docker"],
+      "description": "A containerized machine learning application predicting loan approval rates using applicant parameters.",
+      "points": [
+        "Built ML web application predicting loan approval status based on applicant features.",
+        "Trained classification model using scikit-learn; containerized with Docker and deployed via Flask.",
+        "Designed end-to-end UI/UX for data input and model evaluation using confusion matrix analysis."
+      ],
+      "github": "https://github.com/kulin-m",
+      "demo": null
+    }
+  ],
+  "involvement": [
+    {
+      "role": "Member",
+      "organization": "Game Development Club, VIT Chennai",
+      "period": "2024 – 2025",
+      "details": [
+        "Applied new game development tools and frameworks through hands-on projects and technical workshops.",
+        "Collaborated in cross-functional teams to design and ship group game projects, strengthening communication and agile teamwork skills."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "IBM Blockchain Foundations",
+      "provider": "IBM",
+      "description": "Distributed ledger technology, smart contracts, and enterprise blockchain applications."
+    },
+    {
+      "title": "Cisco Packet Tracer",
+      "provider": "Cisco",
+      "description": "Network simulation, device configuration, and troubleshooting."
+    },
+    {
+      "title": "The Complete Full-Stack Web Development Bootcamp",
+      "provider": "Udemy",
+      "description": "Front-end (HTML, CSS, JavaScript, React.js) and back-end (Node.js, MongoDB)."
+    }
+  ]
+}
